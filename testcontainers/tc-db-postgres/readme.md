@@ -53,4 +53,4 @@ Demo app showing how to use Postgres 12 with Test Containers and Spring Boot.
 * [Database Containers](https://www.testcontainers.org/modules/databases/)
 * [FylwayDB](https://flywaydb.org/)
 * [Liquibase](https://www.liquibase.org/)
-  
+* [Frictionless Local Postgres with Docker Compose](https://adibsaikali.com/2020/08/02/developer-friendly-local-postgresql-with-docker-compose/)
