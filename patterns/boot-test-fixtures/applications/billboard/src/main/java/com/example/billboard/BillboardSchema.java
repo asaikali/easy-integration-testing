@@ -1,3 +1,8 @@
+/*
+ * Copyright 2020 Adib Saikali
+ *
+ */
+
 package com.example.billboard;
 
 import com.programmingmastery.database.schema.Schema;
