@@ -30,7 +30,7 @@ class QuotesRepositoryTest {
   @DynamicPropertySource
   static void jdbcProperties(DynamicPropertyRegistry registry) {
     registry.add("spring.datasource.url", () ->
-        "jdbc:postgresql://127.0.0.1:" + postgres.getMappedPort(5432) + "/quotes");
+        "jdbc:postgresql://" + postgres.getHost() + ":" + postgres.getMappedPort(5432) + "/quotes");
   }
 
   @Test
