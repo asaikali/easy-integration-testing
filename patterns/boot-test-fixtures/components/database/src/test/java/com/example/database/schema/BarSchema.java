@@ -3,16 +3,15 @@
  *
  */
 
-package com.example.billboard;
+package com.example.database.schema;
 
-import com.example.database.schema.Schema;
 import org.springframework.stereotype.Component;
 
 @Component
-class BillboardSchema implements Schema {
+class BarSchema implements Schema {
 
   @Override
   public String getName() {
-    return "billboard";
+    return "bar";
   }
 }

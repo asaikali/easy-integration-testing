@@ -5,13 +5,13 @@
 
 package com.example.billboard;
 
-import com.programmingmastery.database.jpa.PersistableObject;
+import com.example.database.jpa.PersistableObject;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "quotes")
+@Table(name = "quotes", schema = "billboard")
 public class Quote extends PersistableObject {
 
   @Column(name = "quote")

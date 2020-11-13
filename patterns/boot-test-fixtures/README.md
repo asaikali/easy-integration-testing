@@ -70,7 +70,7 @@ thread running junit5 test methods. Unit tests make muse of the following framew
 * [AssertJ](https://joel-costigliola.github.io/assertj/index.html)
 * [Mockito](https://site.mockito.org/)
 
-## Component Tests 
+## Transactional @Component Tests 
 
 Component tests focus on testing a group of related classes within a spring application context,
 with access to a PostgreSQL database, and MockMVC environment. A Tomcat server is not started, 
@@ -97,7 +97,7 @@ Loading data into the database can be done via `@Sql(scripts = path to .sql on c
 `org.springframework.test.context.jdbc.Sql` this will execute a data loading script as part of 
 a test method or test class and rollback the transaction at the end of the test method. 
 
-## Integration Tests
+## Integration Application Server Tests
 
 Integration tests focus on testing the backend by sending it requests over the network. Therefore,
 a running Tomcat server and PostgreSQL server are required to run the integration tests. Test

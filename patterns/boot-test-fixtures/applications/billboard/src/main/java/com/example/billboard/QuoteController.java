@@ -5,7 +5,6 @@
 
 package com.example.billboard;
 
-import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,11 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 class QuoteController {
 
   private final QuoteRepository quoteRepository;
-  private final Environment environment;
 
-  public QuoteController(QuoteRepository quoteRepository, Environment environment) {
+  public QuoteController(QuoteRepository quoteRepository) {
     this.quoteRepository = quoteRepository;
-    this.environment = environment;
   }
 
   @GetMapping("/random-quote")

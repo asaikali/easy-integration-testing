@@ -22,6 +22,9 @@ dependencies {
     developmentOnly(platform(project(":platform")))
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.flywaydb:flyway-core")
+    testImplementation("org.testcontainers:postgresql")
+    testImplementation(testFixtures(project(":components:database")))
+    testImplementation(testFixtures(project(":components:spring-conventions")))
     testRuntimeOnly("org.postgresql:postgresql")
 }
 

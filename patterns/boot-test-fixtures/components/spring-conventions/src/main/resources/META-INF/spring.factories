@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.programmingmastery.time.ClockConfiguration
+  com.example.time.ClockConfiguration
