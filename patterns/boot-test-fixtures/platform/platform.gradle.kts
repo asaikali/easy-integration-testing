@@ -10,6 +10,7 @@ dependencies {
     api(platform("org.springframework.boot:spring-boot-dependencies:${Versions.SpringBootVersion}"))
     api(platform("org.testcontainers:testcontainers-bom:1.15.0"))
     constraints {
+        api("org.seleniumhq.selenium:selenium-java:3.141.59")
         api("com.github.bbottema:emailaddress-rfc2822:2.1.4")
         api("com.icegreen:greenmail:1.5.11")
         api("nl.jqno.equalsverifier:equalsverifier:3.1.13")
