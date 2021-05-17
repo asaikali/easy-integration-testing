@@ -10,7 +10,6 @@ inside a Junit5 test.
 * [Docker](https://www.docker.com/products/docker-desktop) 
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * Favourite Java IDE 
-* A video player that can playback `.flv` video files
 
 ## Todo 
 
@@ -23,8 +22,7 @@ inside a Junit5 test.
 * scroll through the console output and find the output from test containers and look for the whale
   emoji noting which containers were launched by test containers. 
 * navigate into the `target` folder you will find a video recording of the web driver test it's the 
-  file with the `.flv` extension, play this video file and you will se a video of test executing. 
-  Download an flv player if you don't have one. 
+  file with the `.mp4` extension, play this video file and you will se a video of test executing.
  
 ### Run the application in the IDE 
 
@@ -50,8 +48,7 @@ inside a Junit5 test.
 * how many docker containers ran during the test execution?
 * inspect the project `pom.xml`. Notice the test container and selenium dependencies.
 * navigate into the `target` folder you will find a video recording of the web driver test it's the 
-  file with the `.flv` extension, play this video file and you will se a video of test executing. 
-  Download an flv player if you don't have one. 
+  file with the `.mp4` extension, play this video file and you will se a video of test executing.
   
 ### Shutdown the app 
 

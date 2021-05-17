@@ -26,6 +26,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.testcontainers.containers.BrowserWebDriverContainer;
 import org.testcontainers.containers.BrowserWebDriverContainer.VncRecordingMode;
+import org.testcontainers.containers.VncRecordingContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
@@ -39,7 +40,11 @@ class BrowserTest {
   @Container
   private BrowserWebDriverContainer<?> chrome = new BrowserWebDriverContainer<>()
       .withCapabilities(new ChromeOptions())
-      .withRecordingMode(VncRecordingMode.RECORD_ALL, new File("./target/"));
+      .withRecordingMode(VncRecordingMode.RECORD_ALL,
+              new File("./target/"),
+              VncRecordingContainer.VncRecordingFormat.MP4);
+
+
 
   @LocalServerPort
   private int localPort;
