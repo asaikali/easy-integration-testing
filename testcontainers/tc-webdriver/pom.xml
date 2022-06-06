@@ -6,19 +6,19 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.4.5</version>
+    <version>2.7.0</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.example</groupId>
   <artifactId>tc-webdriver</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>tc-wedbriver</name>
-  <description>Demo projcet spring boot + test containers web driver</description>
+  <description>Demo project spring boot + test containers web driver</description>
 
   <properties>
     <java.version>11</java.version>
-    <testcontainers.version>1.15.3</testcontainers.version>
-    <selinum.version>3.141.59</selinum.version>
+    <testcontainers.version>1.17.2</testcontainers.version>
+    <selinum.version>4.0.0</selinum.version>
   </properties>
 
   <dependencies>
